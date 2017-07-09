@@ -48,5 +48,7 @@ XMPP.removeListener(TYPE);
 ## Getting started
 
 1. `npm install react-native-xmpp --save`
-2. `rnpm link react-native-xmpp`
-3. In the Xcode project navigator, select your project, select the `Build Phases` tab and in the `Link Binary With Libraries` section add, **`libRNXMPP.a`**, **`libresolv`** and **`libxml2`**.
+2. `npm link react-native-xmpp`
+3. In the Xcode project navigator, right click on your project and select `Add Files to "your_project"...`. Choose the file `node_modules/react-native-xmpp/RNXMPP.xcodeproj`
+4. In the XCode project navigator, select your project, select `Build Settings` tab, and search for `Enable Bitcode`. Set this option to `No`.
+4. In the Xcode project navigator, select your project, select the `Build Phases` tab and in the `Link Binary With Libraries` section add, **`libRNXMPP.a`**, **`libresolv`** and **`libxml2`**.
